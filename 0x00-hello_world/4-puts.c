@@ -1,9 +1,11 @@
 #include<stdio.h>
 
-/*
- * main - Entry point
- * Description : program prints with puts function 
- * return alwys 0 (success)
+/**
+ * main - prints "line "
+ *
+ * Description : program prints with puts function
+ *
+ * Return : Alawys 0 (Success)
 */
 
 int main(void)
