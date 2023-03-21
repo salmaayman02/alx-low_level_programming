@@ -5,19 +5,19 @@
 /**
  * main - prints "line "
  *
- * Description : program prints with putchar
+ * Description : program print with all digits
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char c = 'a';
+	char c = 'z';
 
-	while (c <= 'z')
+	while (c >= 'a')
 	{
-		putchar(c);
-		c++;
+		putchar(c)
+		c--;
 	}
 	putchar('\n');
 	return (0);

@@ -5,7 +5,7 @@
 /**
  * main - prints "line "
  *
- * Description : program prints with putchar
+ * Description : program prints with putchar function
  *
  * Return: Always 0 (Success)
 */
@@ -16,6 +16,8 @@ int main(void)
 
 	while (c <= 'z')
 	{
+		if (c == 'e' || c == 'q')
+			c++;
 		putchar(c);
 		c++;
 	}

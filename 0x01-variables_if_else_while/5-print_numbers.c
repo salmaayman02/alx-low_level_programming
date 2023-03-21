@@ -5,20 +5,20 @@
 /**
  * main - prints "line "
  *
- * Description : program prints with putchar
+ * Description : program print with all digits
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char c = 'a';
+	int n = 0;
 
-	while (c <= 'z')
+	while (n < 10)
 	{
-		putchar(c);
-		c++;
+		printf("%i", i);
+		n++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }

@@ -5,19 +5,24 @@
 /**
  * main - prints "line "
  *
- * Description : program prints with putchar
+ * Description : program print digits
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char c = 'a';
+	int n = 0;
 
-	while (c <= 'z')
+	while (n <= 9)
 	{
-		putchar(c);
-		c++;
+		putchar(n + '0')
+		if (n != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		n++;
 	}
 	putchar('\n');
 	return (0);
