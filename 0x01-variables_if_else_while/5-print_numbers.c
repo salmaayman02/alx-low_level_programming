@@ -16,7 +16,7 @@ int main(void)
 
 	while (n < 10)
 	{
-		printf("%i", i);
+		printf("%i", n);
 		n++;
 	}
 	printf("\n");
