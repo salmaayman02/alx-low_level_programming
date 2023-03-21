@@ -5,7 +5,7 @@
  *
  * Description : program print
  *
- * Return: Always 0 (Success)
+ * Return: void (Success)
 */
 
 void print_alphabet(void)
@@ -18,5 +18,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-	return (0);
 }
