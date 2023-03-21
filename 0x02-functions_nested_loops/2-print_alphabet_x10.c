@@ -9,7 +9,7 @@
  * Return: no return value(Success)
 */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char c = 'a';
 	int i=0;
@@ -18,7 +18,7 @@ void print_alphabet_x10(void);
 	{
 		while (c <= 'z')
 		{
-			_putchar('c');
+			_putchar(c);
 			c++;
 		}
 	_putchar('\n');
