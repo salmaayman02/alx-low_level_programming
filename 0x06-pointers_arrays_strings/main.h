@@ -7,3 +7,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 int _putchar(char c);
+int del(char x);
+int lowercase(char x);
