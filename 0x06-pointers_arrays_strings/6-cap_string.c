@@ -55,11 +55,11 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if ((i == 0) && (lowercase(s[i]) == 1))
+		if ((i == 0) && (lowercase(s[i])))
 		{	
 			s[i] = s[i] - 32;
 		}
-		else if ((del(s[i]) == 1) && (lowercase(s[i + 1]) == 1))
+		if ((del(s[i]) == 1) && (lowercase(s[i + 1])))
 		{
 			s[i + 1] = s[i + 1] - 32;
 		}
