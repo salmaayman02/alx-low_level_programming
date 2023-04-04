@@ -1,3 +1,5 @@
+#include"main.h"
+
 /**
  * print_chessboard - print ,ulti arrary
  * @a: multi array
