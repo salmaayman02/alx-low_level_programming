@@ -20,7 +20,7 @@ int squre(int n, int x)
 		return (x);
 
 	if ((x * x) < n)
-		return (squre(n, (x + 1));
+		return (squre(n, (x + 1)));
 }
 
 
