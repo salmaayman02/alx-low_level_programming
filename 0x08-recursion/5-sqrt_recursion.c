@@ -1,23 +1,5 @@
 #include"main.h"
 
-int squre(int n, int x);
-/**
- * _sqrt_recursion - squre
- * @n: integer number
- *
- *
- * Description: squre root of x
- *
- * Return: return integer value
-*/
-
-int _sqrt_recursion(int n)
-{
-	int i = squre(n, 1);
-
-	return (i);
-}
-
 
 /**
  * squre - squre
@@ -34,9 +16,25 @@ int squre(int n, int x)
 	if (n < 0)
 		return (-1);
 
-	else if ((x * x) == n)
+	if ((x * x) == n)
 		return (x);
 
-	else if ((x * x) < n)
+	if ((x * x) < n)
 		return (squre(n, (x + 1));
+}
+
+
+/**
+ * _sqrt_recursion - squre
+ * @n: integer number
+ *
+ *
+ * Description: squre root of x
+ *
+ * Return: return integer value
+*/
+
+int _sqrt_recursion(int n)
+{
+	return (squre(n, 1));
 }
