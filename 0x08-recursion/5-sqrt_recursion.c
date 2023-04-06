@@ -33,10 +33,10 @@ int squre(int n, int x)
 {
 	if (n < 0)
 		return (-1);
-	else if (x * x == n)
+
+	else if ((x * x) == n)
 		return (x);
-	else if (x * x < n)
-		return (squre(n, x + 1));
-	else if (n == 0)
-		return (0);
+
+	else if ((x * x) < n)
+		return (squre(n, (x + 1));
 }
