@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				sum = sum + atoi(argv[argc]);
+				printf("%d\n", sum);
 			}
 		}
 	}
