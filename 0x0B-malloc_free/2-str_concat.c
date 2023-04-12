@@ -16,10 +16,10 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 
 	if (s1 == NULL && s2 == NULL)
-		return (0);
-	else if (s1 == NULL)
+		return (NULL);
+	if (s1 == NULL)
 		return (s2);
-	else if (s2 == NULL)
+	if (s2 == NULL)
 		return (s1);
 
 
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	ptr = malloc(size + 1);
 
 	if (ptr == 0)
-		return (0)
+		return (NULL)
 
 	else
 	{
