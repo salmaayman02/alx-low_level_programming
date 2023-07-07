@@ -12,10 +12,18 @@
 
 void print_binary(unsigned long int n)
 {
-	int i = CHAR_BIT;
+	int bit = CHAR_BIT;
 
-	while (i--)
+	while (bit)
 	{
-		_putchar('0' + ((n >> i) & 1));
+		if (n & 1L << --bit)
+		{
+			_putchar('1');
+			printed++;
+		}
+		else if (printed)
+			_putchar('0');
 	}
+	if (!printed)
+		_putchar('0');
 }

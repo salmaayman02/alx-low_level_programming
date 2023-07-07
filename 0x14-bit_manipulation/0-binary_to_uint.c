@@ -13,28 +13,15 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x = 0, i, l = 0, y, z, j;
-	
-	if (b == '\0')
+	unsigned int x = 0;
+
+	if (!b)
 		return (0);
-	while (b[l] != '\0')
-		l++;
-	for (i = 0; i < l; i++)
+	while (*b)
 	{
-		if (b[i] == '1')
-		{
-			y = l - i - 1;
-			j = 1;
-			for (z = 0; z < y; z++)
-			{
-				j = j * 2;
-			}
-			x = x + j;
-		}
-		else if (b[i] != '0')
-		{
+		if (*b != '0' && *b != '1')
 			return (0);
-		}
+		x = x * 2 + (*b++ - '0');
 	}
-	return (x);
+	return (x)
 }
