@@ -17,9 +17,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	char b[100];
 	unsigned int i = 0;
 
-	if (index >= sizeof(n) * 8)
-		return (-1);
-
 	while (n)
 	{
 		if (n % 2 == 0)
@@ -38,6 +35,9 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (b[index] == '1')
 		return (1);
+
+	if (index >= sizeof(n) * 8)
+		return (-1);
 
 	else
 		return (0);
