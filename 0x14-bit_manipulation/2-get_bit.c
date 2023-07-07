@@ -23,8 +23,10 @@ int get_bit(unsigned long int n, unsigned int index)
 		{
 			b[i] = '0';
 		}
-		else
+		else if (n % 2 == 1)
 			b[i] = '1';
+		else
+			return (0);
 		i++;
 		n = n / 2;
 	}
