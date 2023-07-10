@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
+#include "main.h"
 
 char *creat_buffer(char *file);
 void close_file (int fd);
